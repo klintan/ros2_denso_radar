@@ -2,7 +2,7 @@
 
 ROS2 driver for Denso Toyota/Lexus radar.
 
-Adapted from Faraz Khan https://github.com/frk2/opencaret. 
+Adapted from excellent work of Faraz Khan and OpenCaret https://github.com/frk2/opencaret. 
 
 All hard work is done by him and Comma.ai. 
 

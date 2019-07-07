@@ -1,26 +1,21 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
-    <name>nmea_navsat_driver</name>
-    <version>0.5.0</version>
+    <name>ros2_denso_radar</name>
+    <version>0.1.0</version>
     <description>
-        Package to parse NMEA strings and publish a very simple GPS message. Does not
-        require or use the GPSD deamon.
+        Densor radar driver for ROS2
     </description>
 
-    <maintainer email="evenator@gmail.com">Ed Venator</maintainer>
+    <maintainer>Andreas Klintberg</maintainer>
 
-    <license>BSD</license>
+    <license>MIT</license>
 
-    <url type="website">http://ros.org/wiki/nmea_navsat_driver</url>
-
-    <author email="eric@ericperko.com">Eric Perko</author>
-    <author>Steven Martin</author>
+    <author email="farazrkhan@gmail.com">Faraz Khan</author>
 
     <exec_depend>rclpy</exec_depend>
     <exec_depend>python-serial</exec_depend>
     <exec_depend>geometry_msgs</exec_depend>
-    <exec_depend>nmea_msgs</exec_depend>
     <exec_depend>sensor_msgs</exec_depend>
 
     <test_depend>python3-pytest</test_depend>

@@ -7,7 +7,7 @@ setup(
     install_requires=['setuptools', 'opendbc'],
     author='Faraz Khan',
     author_email='farazrkhan@gmail.com',
-    description='Densor Radar driver.',
+    description='Denso Radar driver.',
     license='MIT',
     entry_points={
         'console_scripts': [

@@ -1,17 +1,30 @@
+import os
+from glob import glob
+
 from setuptools import setup, find_packages
 
+PACKAGE_NAME = 'ros2_denso_radar'
+SHARE_DIR = os.path.join("share", PACKAGE_NAME)
+
 setup(
-    name='radar',
+    name=PACKAGE_NAME,
     version='0.0.1',
-    packages=find_packages(exclude=['test']),
-    install_requires=['setuptools', 'opendbc'],
+    packages=["radar"],
+    package_dir={'': 'src', },
+    data_files=[
+        (os.path.join(SHARE_DIR, "launch"), glob(os.path.join("launch", "*.launch.py"))),
+        (os.path.join(SHARE_DIR, "config"), glob(os.path.join("config", "*.yaml")))],
+    install_requires=['setuptools',
+                      'pyserial',
+                      'python-can',
+                      'cantools'],
     author='Faraz Khan',
     author_email='farazrkhan@gmail.com',
     description='Denso Radar driver.',
     license='MIT',
     entry_points={
         'console_scripts': [
-            'radar_controller = radar.driver:main',
+            'radar_driver = radar.driver:main',
         ],
     },
 )

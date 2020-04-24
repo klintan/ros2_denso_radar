@@ -2,3 +2,12 @@ bin
 include
 lib
 .Python
+
+install
+build
+log
+
+
+.idea
+
+**.pyc
